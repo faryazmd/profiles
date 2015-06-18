@@ -6,6 +6,10 @@ nginx::resource::upstream { 'jenkins-master':
 }
 
 nginx::resource::vhost { 'jenkins-master.com':
-  proxy => 'http://jenkins-master',
+  proxy => 'https://jenkins-master',
+  ssl                  => true,
+  ssl_cert             => '/var/lib/puppet/ssl/certs/jenkins-master.com.pem',
+  ssl_key              => '/var/lib/puppet/ssl/private_keys/jenkins-master.com.pem',
+  ssl_port             => 443,
 }
 }
