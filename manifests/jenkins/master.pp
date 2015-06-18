@@ -1,3 +1,3 @@
 class profiles::jenkins::master {
-include ::jenkins-master
+include ::jenkins::master
 }
