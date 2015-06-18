@@ -6,9 +6,9 @@ nginx::resource::upstream { 'jenkins-master.com':
 }
 
 nginx::resource::vhost { 'jenkins-master.com':
-  proxy => 'http://jenkins-master.com',
-#  ssl                  => true,
-#  ssl_cert    => '/etc/puppetlabs/puppet/ssl/certs/jenkins-master.xorlab1.com.pem',
-#  ssl_key     => '/etc/puppetlabs/puppet/ssl/private_keys/jenkins-master.xorlab1.com.pem',
+  proxy => 'https://jenkins-master.com',
+  ssl                  => true,
+  ssl_cert    => '/etc/puppetlabs/puppet/ssl/certs/jenkins-master.xorlab1.com.pem',
+  ssl_key     => '/etc/puppetlabs/puppet/ssl/private_keys/jenkins-master.xorlab1.com.pem',
 }
 }
