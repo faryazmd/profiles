@@ -1,3 +1,3 @@
 class profiles::ngnix::nginx {
-include ::nginx
+include ::nginx::nginx
 }
