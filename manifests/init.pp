@@ -1,5 +1,5 @@
 class profiles {
-include profiles::nginx::nginx
+include profiles::nginx
 include profiles::psexercise
 include profiles::jenkins::jenkins
 include profiles::jenkins::master
