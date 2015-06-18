@@ -1,5 +1,5 @@
 class profiles::jenkins::proxy {
-nginx::resource::upstream { 'jenkins-master.com':
+nginx::resource::upstream { 'jenkins-master.xorlab1.com':
   members => [
     'localhost:8080',
   ],
