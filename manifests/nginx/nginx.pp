@@ -1,3 +1,3 @@
-class profiles::nginx {
+class profiles::ngnix::nginx {
 include ::nginx
 }
