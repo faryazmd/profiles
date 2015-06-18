@@ -8,3 +8,4 @@ nginx::resource::upstream { 'jenkins-master':
 nginx::resource::vhost { 'jenkins-master.com':
   proxy => 'http://jenkins-master',
 }
+}
