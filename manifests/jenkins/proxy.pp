@@ -6,7 +6,7 @@ nginx::resource::upstream { 'jenkins-master.xorlab1.com':
 }
 
 nginx::resource::vhost { 'jenkins-master.com.xorlab1.com':
-  proxy => 'https://jenkins-master.xorlab1.com',
+  proxy => 'http://jenkins-master.xorlab1.com',
   ssl         => true,
   ssl_port    => 443,
   listen_port => 443,
